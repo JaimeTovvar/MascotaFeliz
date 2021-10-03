@@ -1,0 +1,33 @@
+﻿@page
+@model MascFelizWeb.App.Frontend.Pages.ListModel
+@{
+}
+<h1>Mascoatas </h1>
+<table class="table">
+    @foreach (var mascotas in Model.Mascotas)
+    {
+        <tr>
+
+            <td>
+                @mascotas.Nombre
+
+
+            </td>
+
+            <td>
+                @mascotas.Peso
+
+
+            </td>
+
+            <td>
+                @mascotas.Frec_Cardiaca
+
+
+            </td>
+
+
+
+        </tr>
+
+    }

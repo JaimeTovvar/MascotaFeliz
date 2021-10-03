@@ -2,8 +2,21 @@
 @model MascFelizWeb.App.Frontend.Pages.ListModel
 @{
 }
-<h1>Mascoatas </h1>
+<h1>Mascotas </h1>  
 <table class="table">
+    <thead> 
+        <th>
+            Nombre Mascota
+        </th>
+        <th>
+            Peso
+        </th>
+        <th>
+            Frecuencia Cardiaca 
+        </th>
+    </thead>
+    <tbody>
+
     @foreach (var mascotas in Model.Mascotas)
     {
         <tr>
@@ -11,23 +24,17 @@
             <td>
                 @mascotas.Nombre
 
-
             </td>
 
             <td>
                 @mascotas.Peso
-
-
             </td>
 
             <td>
                 @mascotas.Frec_Cardiaca
-
-
             </td>
 
-
-
         </tr>
+    }  
 
-    }
+    </tbody>
